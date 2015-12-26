@@ -13,3 +13,6 @@ mix phoenix.new hello_phoenix --no-brunch
 ## branch: 2
 [Adding Pages](http://www.phoenixframework.org/docs/adding-pages) のうち、/hello を実装した直後の状態
 
+## branch: 3
+[Adding Pages](http://www.phoenixframework.org/docs/adding-pages) のうち、/hello/:messenger を実装した直後の状態
+
