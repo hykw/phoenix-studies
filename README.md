@@ -16,3 +16,5 @@ mix phoenix.new hello_phoenix --no-brunch
 ## branch: 3
 [Adding Pages](http://www.phoenixframework.org/docs/adding-pages) のうち、/hello/:messenger を実装した直後の状態
 
+## branch: 4
+[Routing](http://www.phoenixframework.org/docs/routing) を実装した直後の状態
