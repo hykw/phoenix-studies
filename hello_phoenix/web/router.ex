@@ -19,15 +19,19 @@ defmodule HelloPhoenix.Router do
     get "/", PageController, :index
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
+    get "/helloid/:id", HelloController, :showid
+    get "/html/:id", HelloController, :htmlhere
 
-    #    resources "users", UserController
+    get "/hello404", HelloController, :resp404
 
-    #resources "posts", PostController, only: [:index, :show]
-    resources "comments", CommentController, except: [:delete]
-
-    resources "users", UserController do
-      resources "posts", PostController
-    end
+    #     #    resources "users", UserController
+    #
+    #     #resources "posts", PostController, only: [:index, :show]
+    #     resources "comments", CommentController, except: [:delete]
+    #
+    #     resources "users", UserController do
+    #       resources "posts", PostController
+    #     end
 
   end
 
