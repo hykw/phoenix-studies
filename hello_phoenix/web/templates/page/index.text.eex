@@ -1,0 +1,1 @@
+これは web/templates/page/index.text.eex の(<%= @message %>) 中身

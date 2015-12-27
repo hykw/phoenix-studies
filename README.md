@@ -21,3 +21,6 @@ mix phoenix.new hello_phoenix --no-brunch
 
 ## branch: 5
 [Controllers](http://www.phoenixframework.org/docs/controllers) のうち、Assigning Layouts の前まで
+
+## branch: 6
+[Controllers](http://www.phoenixframework.org/docs/controllers) を実装した直後の状態

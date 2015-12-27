@@ -2,7 +2,7 @@ defmodule HelloPhoenix.Router do
   use HelloPhoenix.Web, :router
 
   pipeline :browser do
-    plug :accepts, ["html"]
+    plug :accepts, ["html", "text"]
     plug :fetch_session
     plug :fetch_flash
     plug :protect_from_forgery
@@ -17,6 +17,12 @@ defmodule HelloPhoenix.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+  end
+
+  # ↑と重複してもOK
+  scope "/", HelloPhoenix do
+    pipe_through :browser # Use the default browser stack
+
     get "/hello", HelloController, :index
     get "/hello/:messenger", HelloController, :show
     get "/helloid/:id", HelloController, :showid
@@ -34,6 +40,13 @@ defmodule HelloPhoenix.Router do
     #     end
 
   end
+
+  scope "/", HelloPhoenix do
+    get "/redir", PageController, :redirect_text, as: :redirect_text
+  end
+
+
+
 
   scope "/admin", HelloPhoenix.Admin, as: :admin do
     pipe_through :browser
