@@ -2,7 +2,8 @@ defmodule HelloPhoenix.ErrorView do
   use HelloPhoenix.Web, :view
 
   def render("404.html", _assigns) do
-    "Page not found"
+  #    "Page not foundだ。"
+    render("not_found.html", %{})
   end
 
   def render("500.html", _assigns) do

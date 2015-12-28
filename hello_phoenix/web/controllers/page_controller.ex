@@ -1,7 +1,7 @@
 defmodule HelloPhoenix.PageController do
   use HelloPhoenix.Web, :controller
 
-  def index(conn, params) do
+  def __index(conn, params) do
   #    redirect conn, to: "/redir"
   #    redirect conn, external: "http://elixir-lang.org/"
   redirect conn, to: redirect_text_path(conn, :redirect_text)
@@ -16,8 +16,6 @@ defmodule HelloPhoenix.PageController do
     text conn, "Redirect text!"
   end
 
-
-
   def _index(conn, _params) do
     conn
     #    |> put_flash(:info, "Welcome to Phoenix, from flash info!")
@@ -29,4 +27,10 @@ defmodule HelloPhoenix.PageController do
     |> render("index.html")
     #    render conn, "index.html"
   end
+
+  def index(conn, _params) do
+    render conn, "index.html"
+  end
+
+
 end

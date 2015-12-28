@@ -24,3 +24,6 @@ mix phoenix.new hello_phoenix --no-brunch
 
 ## branch: 6
 [Controllers](http://www.phoenixframework.org/docs/controllers) を実装した直後の状態
+
+## branch: 7
+[Views](http://www.phoenixframework.org/docs/views) を実装した直後の状態
