@@ -18,6 +18,7 @@ defmodule HelloPhoenix.Router do
 
     get "/", PageController, :index
     get "/about", PageController, :about
+    get "/test", PageController, :test
   end
 
   # ↑と重複してもOK

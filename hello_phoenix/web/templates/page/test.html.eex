@@ -1,4 +1,9 @@
-I came from assigns: <%= @message %>
+<div class="jumbotron">
+  <p><%= handler_info @conn %></p>
 
-This is the message: <%= message %>
+  <h3>Keys for the conn Struct</h3>
+  <%= for key <- connection_keys @conn do %>
+    <%= render HelloPhoenix.SharedView, "key.html", key: key %>
+<% end %>
+</div>
 

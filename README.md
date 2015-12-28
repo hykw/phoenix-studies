@@ -27,3 +27,6 @@ mix phoenix.new hello_phoenix --no-brunch
 
 ## branch: 7
 [Views](http://www.phoenixframework.org/docs/views) を実装した直後の状態
+
+## branch: 8
+[Templates](http://www.phoenixframework.org/docs/templates) を実装した直後の状態
