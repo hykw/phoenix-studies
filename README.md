@@ -33,3 +33,6 @@ mix phoenix.new hello_phoenix --no-brunch
 
 ## branch: 09
 [Using MySQL](http://www.phoenixframework.org/docs/using-mysql) を実装した直後の状態
+
+## branch: 10
+[Exrm Releases](http://www.phoenixframework.org/docs/advanced-deployment) を実装した直後の状態

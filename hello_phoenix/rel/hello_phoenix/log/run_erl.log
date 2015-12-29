@@ -1,0 +1,8 @@
+run_erl [26516] Tue Dec 29 18:51:10 2015
+Args before exec of shell:
+run_erl [26516] Tue Dec 29 18:51:10 2015
+argv[0] = sh
+run_erl [26516] Tue Dec 29 18:51:10 2015
+argv[1] = -c
+run_erl [26516] Tue Dec 29 18:51:10 2015
+argv[2] = exec "/home/hitoshi-hayakawa/moge/phoenix-studies/hello_phoenix/rel/hello_phoenix/bin/hello_phoenix" "console"
